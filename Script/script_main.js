@@ -28,7 +28,9 @@ change_width = (win_width) => {
         link4.fontSize = "1em"
         link5.fontSize = "1em"
 
-
+        shape = document.getElementsByTagName("svg")[0];
+        shape.setAttribute("viewBox", "0 0 500 600");
+        particle=document.getElementById('particles-js').style.height="14.5em"
 
 
     }
