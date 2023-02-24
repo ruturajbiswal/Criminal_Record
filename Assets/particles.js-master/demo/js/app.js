@@ -16,20 +16,20 @@ particlesJS('particles-js',
   {
     "particles": {
       "number": {
-        "value": 80,
+        "value": 100,
         "density": {
           "enable": true,
           "value_area": 800
         }
       },
       "color": {
-        "value": "#ffffff"
+        "value": ["#17f9ff","#ffff00","#00b4fc","#fd0a54","#ff6600","#ff3366"]
       },
       "shape": {
         "type": "circle",
         "stroke": {
           "width": 0,
-          "color": "#000000"
+          "color": "#ffff00"
         },
         "polygon": {
           "nb_sides": 5
@@ -41,37 +41,37 @@ particlesJS('particles-js',
         }
       },
       "opacity": {
-        "value": 0.5,
+        "value": 1,
         "random": false,
         "anim": {
           "enable": false,
           "speed": 1,
-          "opacity_min": 0.1,
+          "opacity_min":0.5,
           "sync": false
         }
       },
       "size": {
-        "value": 5,
+        "value": 8.5,
         "random": true,
         "anim": {
-          "enable": false,
+          "enable": true,
           "speed": 40,
           "size_min": 0.1,
           "sync": false
         }
       },
       "line_linked": {
-        "enable": true,
+        "enable": false,
         "distance": 150,
         "color": "#ffffff",
-        "opacity": 0.4,
+        "opacity": 0.9,
         "width": 1
       },
       "move": {
         "enable": true,
-        "speed": 6,
-        "direction": "none",
-        "random": false,
+        "speed": 3.5,
+        "direction": "top",
+        "random": true,
         "straight": false,
         "out_mode": "out",
         "attract": {
@@ -85,7 +85,7 @@ particlesJS('particles-js',
       "detect_on": "canvas",
       "events": {
         "onhover": {
-          "enable": true,
+          "enable": false,
           "mode": "repulse"
         },
         "onclick": {
@@ -112,10 +112,10 @@ particlesJS('particles-js',
           "distance": 200
         },
         "push": {
-          "particles_nb": 4
+          "particles_nb": 10
         },
         "remove": {
-          "particles_nb": 2
+          "particles_nb": 5
         }
       }
     },
