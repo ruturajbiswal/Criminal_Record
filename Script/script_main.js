@@ -11,7 +11,7 @@ change_width = (win_width) => {
         var link4 = document.getElementById("link4").style;
         var link5 = document.getElementById("link5").style;
     // for decreasing margin & text size
-    if (win_width < 652) {
+    if (win_width <= 652) {
         
        
         logoimg.width = '3.5em'
@@ -30,6 +30,15 @@ change_width = (win_width) => {
         link5.fontSize = "1em"
 
        
+        if(win_width < 320)
+        {
+            link1.marginRight = "0.4em"
+            link1.marginLeft = "0.4em"
+            link2.marginRight = "0.4em"
+            link3.marginRight = "0.4em"
+            link4.marginRight = "0.4em"
+            link5.marginRight = "0.4em"
+        }
 
 
     }
