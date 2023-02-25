@@ -13,6 +13,7 @@ change_width = (win_width) => {
         const main_head=document.getElementById("head_bar").style;
         const contxt=document.getElementById("context").style;   
         const hea=document.getElementById('para').style;
+        const tit=document.getElementById('go').style;
 
     // for decreasing margin & text size
     if (win_width <= 652) {
@@ -35,13 +36,18 @@ change_width = (win_width) => {
         main_head.height="5.5em"
         contxt.left='4em'
         contxt.padding='0.5em'
-       hea.top='5em'
+       hea.top='3.5em'
+       tit.fontSize='25px'
+       hea.fontSize='14px'
+       contxt.height='22em'
 
        
 
+
        
-        if(win_width <= 320)
-{main_head.height="5.5em"
+        if(win_width<=425)
+        {
+            main_head.height="5.5em"
 logoimg.width = '3.5em'
 logo.width = '2em'
 headtxt.fontSize = "1.2em"
@@ -56,6 +62,11 @@ link5.fontSize = "1em"
             link3.marginRight = "0.4em"
             link4.marginRight = "0.4em"
             link5.marginRight = "0.4em"
+            contxt.left='3em'
+            contxt.padding='0.5em'
+           hea.top='2.5em'
+           tit.fontSize='12px'
+           hea.fontSize='10px'
         }
 
 
