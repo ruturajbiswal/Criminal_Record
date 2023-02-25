@@ -39,7 +39,7 @@ change_width = (win_width) => {
        hea.top='3.5em'
        tit.fontSize='25px'
        hea.fontSize='14px'
-       contxt.height='22em'
+       contxt.height='23em'
 
        
 
