@@ -7,11 +7,18 @@
     <link rel="stylesheet" href="./css/style_main.css">
     <title>Bargarh Sub - Jail</title>
 </head>
-<body onload="change_width(window.outerWidth)">
 
 
-<div class="main_container">
+<body onload="change_width(window.outerWidth),loader()">
 
+    <div class="loading" id="load">
+        <span class="loader"></span>
+    </div>
+
+
+
+<div class="main_container" id="maincont">
+   
 <div class="header" id="head_bar">
     <div class="logo" id="logo">
         <img id="logo_img" src="./Assets/logo_main.png" alt="Govt. Odisha">
@@ -27,7 +34,7 @@
 <a href="./Html/const.html" id="link2">Who's Who</a>
 <a href="./Html/criminal.html" id="link3">Criminal</a>
 <a href="./Html/admin.html" id="link4">Admin</a>
-<a href="./Html/const.html" id="link5">About</a>
+<a href="https://github.com/ruturajbiswal" id="link5">About</a>
 </nav>
 
 <div id="particles-js">
@@ -103,6 +110,22 @@
 
     
 </body>
+
+<script>
+
+load=document.getElementById('load')
+cont=document.getElementById('maincont')
+window.addEventListener('load',function(){
+    load.style.display="none"
+    cont.style.display='block'
+})
+
+
+
+
+
+</script>
+
 <script src="./Script/script_main.js"></script>
 <script src="./Assets/particles.js-master/particles.js"></script>
 <script src="./Assets/particles.js-master/demo/js/app.js"></script>
