@@ -32,7 +32,7 @@ change_width = (win_width) => {
         link4.fontSize = "1em"
         link5.fontSize = "1em"
         main_head.height="5.5em"
-        contxt.left="4em"
+      
        
        
 
