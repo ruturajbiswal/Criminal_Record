@@ -12,6 +12,7 @@ change_width = (win_width) => {
         const link5 = document.getElementById("link5").style;
         const main_head=document.getElementById("head_bar").style;
         const contxt=document.getElementById("context").style;   
+        const hea=document.getElementById('para').style;
 
     // for decreasing margin & text size
     if (win_width <= 652) {
@@ -32,8 +33,10 @@ change_width = (win_width) => {
         link4.fontSize = "1em"
         link5.fontSize = "1em"
         main_head.height="5.5em"
-      
-       
+        contxt.left='4em'
+        contxt.padding='0.5em'
+       hea.top='5em'
+
        
 
        

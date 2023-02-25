@@ -155,15 +155,18 @@ padding: 1em;
 user-select: none;
 
 
+
 }
-.context h1{
+#go{
    
     color: antiquewhite;
     font-family: 'Courgette', cursive;
     text-decoration: underline white;
     text-underline-offset: 6px;
     text-underline-position: 1px;
-    margin: 1em 0 2em 0;
+    margin-top: 1em;
+    margin-bottom: 2em;
+ height: 1em;
 }
 
 #para{
