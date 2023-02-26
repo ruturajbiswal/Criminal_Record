@@ -49,6 +49,7 @@ font-family: 'Ubuntu', sans-serif;
     height: 20em;
     display: flex;
     justify-content: center;
+
     
 }
 
@@ -87,6 +88,7 @@ background-color: rgb(4, 1, 20);
 margin-bottom: 2em;
 
 
+
 }
 input:nth-child(1)
 {
@@ -118,31 +120,42 @@ border: none;
 color: aliceblue;
 cursor: pointer;
 }
+#res{
+    position: absolute;
+    bottom: 5em;
+color: red;font-weight: 500;
+letter-spacing: 1.5px;
+display: none;
+}
+
+
         
     </style>
 </head>
 
 <body>
+   
 
 <div id="main">
+   
 
-<div class="form_area">
+<div class="form_area" id="main_ar">
     <img src="../Assets/user_main.png" alt="">
  
-<form action="" method="post">
+<form id="main_f" action="" method="post">
 
-    <input type="text" name="username" id="" placeholder="Username">
-<input type="password" name="username" id="" placeholder="Password">
+    <input type="text" name="username" id="us" placeholder="Username">
+<input type="password" name="username" id="pw" placeholder="Password">
 <br>
 
-<button id="sub">Submit</button>
+<button id="sub" onclick="inc()">Submit</button>
 
 </form>
 
 
 </div>
 
-
+<div id="res">Wrong Attempt Try Again!!!</div>
 </div>
 
 
@@ -150,6 +163,40 @@ cursor: pointer;
 
 </body>
 <script>
+  const wr=document.getElementById('res').style
+
+  inc=()=>{
+    res=0
+    if(res==0)
+  {
+    wr.display='block'
+  }
+  }
+
+
+
+const main=document.getElementById('main_f').style
+const farea=document.getElementById('main_ar').style
+window.addEventListener('onresize',mag())
+function mag(){
+    wid=window.innerWidth
+    console.log(wid)
+    if(wid<=425)
+    {
+main.top='10em'
+
+    }
+    if(wid<=320)
+{
+    farea.width='16em'
+    main.top='10em'
+}
+}
+
+
+
+
+
 
 angle=0
 setInterval(() => {
@@ -157,6 +204,8 @@ setInterval(() => {
     document.getElementById('sub').style.background=`linear-gradient(${angle}deg,#e6324b 50%,#2b2b2b 20%)`
     angle=angle+5;
 }, 80);
+
+
 
 
 
