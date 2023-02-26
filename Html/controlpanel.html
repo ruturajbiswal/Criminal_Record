@@ -1,0 +1,78 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Control Panel</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
+body{
+background-color: black;
+}
+</style>
+
+</head>
+
+<body class="p-5">
+    <div class="container bg-white rounded w-100 p-3">
+        <form action="main.php" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <img id="imagePreview" src="#" alt="" class="img-fluid" width="100">
+            </div>
+            <div class="form-group">
+                <label for="image"></label>
+                <input type="file" class="form-control-file" id="image" name="img">
+               
+            </div>
+            <div class="form-group">
+                <label for="fname">First Name</label>
+                <input type="text" class="form-control" id="fname" placeholder="Enter your first name" name="fname">
+            </div>
+            <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input type="text" class="form-control" id="lastName" placeholder="Enter your last name" name="lname">
+            </div>
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" class="form-control" id="age" placeholder="Enter your age" name="age">
+            </div>
+           
+            
+            <div class="form-group">
+                <label for="crimeType">Type of Crime</label>
+                <input type="text" class="form-control" id="crimeType" name="cr" placeholder="Enter type of crime">
+            </div>
+            <div class="form-group">
+                <label for="crimeDetails">Crime Details</label>
+                <textarea class="form-control" id="crimeDetails" rows="3" name="det"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary " id="submit" name="submit">Submit</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+  
+    <script>
+        $('#image').on('change', function () {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $('#imagePreview').attr('src', e.target.result);
+            }
+            reader.readAsDataURL
+                (this.files[0]);
+        });
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+

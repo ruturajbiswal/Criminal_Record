@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="refresh" content="1"> -->
     <title>Admin</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Amita&family=Carter+One&family=Courgette&family=Croissant+One&family=Emblema+One&family=Merienda+One&family=Merriweather+Sans:ital,wght@1,300;1,500&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
@@ -45,8 +46,8 @@ font-family: 'Ubuntu', sans-serif;
     background-color: rgba(130, 193, 249, 0.326);
     border-radius: 15px;
     border: 2px solid rgb(240, 158, 158);
-    width: 20em;
-    height: 20em;
+    width: 21em;
+    height: 23em;
     display: flex;
     justify-content: center;
 
@@ -56,7 +57,7 @@ font-family: 'Ubuntu', sans-serif;
 img{
     width: 5em;
     height: 5em;
-    margin-top: 1em;
+    margin-top: 2em;
     border: 1px solid seashell;
     border-radius: 50%;
     padding: 0.3em 0.3em 0.3em 0.3em;
@@ -69,7 +70,7 @@ form{
 width: 13.6em;
 height: 10em;
 position: absolute;
-top: 17em;
+top: 20em;
 padding: 0.5em;
 
 
@@ -92,11 +93,11 @@ margin-bottom: 2em;
 }
 input:nth-child(1)
 {
-    margin-top: 2em;
+    margin-top: 2.5em;
 }
 input:nth-child(2)
 {
-    margin-bottom: 0.5em;
+    margin-bottom: 1.5em;
 }
 
 
@@ -140,39 +141,41 @@ display: none;
    
 
 <div class="form_area" id="main_ar">
-    <img src="../Assets/user_main.png" alt="">
+    <img src="../Assets/user_main.png" alt="Admin">
  
-<form id="main_f" action="" method="post">
+<form id="main_f" action="admin.php" method="post">
 
-    <input type="text" name="username" id="us" placeholder="Username">
-<input type="password" name="username" id="pw" placeholder="Password">
+    <input type="text" name="us" id="us" placeholder="Username">
+<input type="password" name="pw" id="pw" placeholder="Password">
 <br>
 
-<button id="sub" onclick="inc()">Submit</button>
+<button id="sub" type="submit" >Submit</button>
 
 </form>
-
-
-</div>
-
 <div id="res">Wrong Attempt Try Again!!!</div>
 </div>
+
+</div>
+
+ 
+
+
+
+
+
+
+
 
 
 
 
 </body>
 <script>
-  const wr=document.getElementById('res').style
-
-  inc=()=>{
-    res=0
-    if(res==0)
-  {
-    wr.display='block'
-  }
-  }
-
+  
+if(res==0)
+{
+    document.getElementById('res').style.display='block';
+}
 
 
 const main=document.getElementById('main_f').style
@@ -183,13 +186,15 @@ function mag(){
     console.log(wid)
     if(wid<=425)
     {
-main.top='10em'
+main.top='12em'
+farea.width='16em'
+farea.height='20em'
 
     }
     if(wid<=320)
 {
     farea.width='16em'
-    main.top='10em'
+    main.top='12em'
 }
 }
 
