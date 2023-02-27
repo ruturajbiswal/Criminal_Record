@@ -100,8 +100,8 @@ body {
     height: 5em;
     filter: grayscale(100);
     filter: brightness(8);
-    -webkit-filter: grayscale(100);
-    -webkit-filter: brightness(8);
+    -webkit-filter: invert(100);
+    
 
     margin: 0.9em 2em 0 2em;
 }
