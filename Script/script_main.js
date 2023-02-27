@@ -3,7 +3,8 @@
 
 change_width = (win_width) => {
     console.log(win_width);
-    const logoimg = document.getElementById("logo_img").style; const logo = document.getElementById("logo").style;
+    const logoimg = document.getElementById("logo_img").style; 
+    const logo = document.getElementById("logo").style;
         const headtxt = document.getElementById("headtxt").style;
         const link1 = document.getElementById("link1").style;
 //         const link2 = document.getElementById("link2").style;
